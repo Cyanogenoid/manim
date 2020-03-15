@@ -310,7 +310,7 @@ class Scene(Container):
         return time_progression
 
     def get_run_time(self, animations):
-        return np.max([animation.run_time for animation in animations])
+        return np.max([animation.run_time for animation in animations]) + 0.1
 
     def get_animation_time_progression(self, animations):
         run_time = self.get_run_time(animations)
